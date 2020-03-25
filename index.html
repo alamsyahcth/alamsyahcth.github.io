@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/Logo.png">
+    <style>
+      body{
+        font-family: 'Ubuntu', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row p-0 m-0 h-100">
+      <div class="col-md-6 d-flex">
+        <div class="justify-content-center align-self-center text-center">
+          <img src="assets/images/Logo.svg" class="image-logo img m-5" />
+          <h1>Hi Im Tahta</h1>
+          <p class="text-greeting">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/alamsyah-catur/" class="btn-social-media">
+              <img src="assets/images/linkedin.svg" class="img-btn-social-media">
+              My Linked In
+            </a>
+            <a href="https://github.com/alamsyahcth" class="btn-social-media">
+              <img src="assets/images/github.svg" class="img-btn-social-media">
+              My Github
+            </a>
+            <a href="https://www.instagram.com/alamsyahcth/" class="btn-social-media">
+              <img src="assets/images/instagram.svg" class="img-btn-social-media">
+              My Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex">
+        <div class="justify-content-center align-self-center p-4">
+          
+          <div class="card w-100">
+            <h5 class="skill-title">UI/UX</h5>
+            <h5 class="skill-content">
+              I Create User Interface and mobile apps design and usefull flow
+            </h5>
+            <div class="tools d-flex">
+              <div class="tool-content d-flex flex-row bd-highlight">
+                <img src="assets/images/xd.svg" class="img-tools">
+                Adobe XD
+              </div>
+              <div class="tool-content d-flex">
+                <img src="assets/images/ps.svg" class="img-tools">
+                  Adobe Photoshop
+              </div>
+              <div class="tool-content d-flex">
+                <img src="assets/images/ai.svg" class="img-tools">
+                  Adobe Illustrator
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-100">
+            <h5 class="skill-title">Design Graphic</h5>
+            <h5 class="skill-content">
+              I Create any design Logo, Poster, Banner and Anything about design
+            </h5>
+            <div class="tools d-flex">
+              <div class="tool-content d-flex">
+                <img src="assets/images/ps.svg" class="img-tools">
+                Adobe Photoshop
+              </div>
+              <div class="tool-content d-flex">
+                <img src="assets/images/ai.svg" class="img-tools">
+                Adobe Illustrator
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-100">
+            <h5 class="skill-title">Programming</h5>
+            <h5 class="skill-content">
+              I like programming from the frontend and backend, especially websites
+            </h5>
+            <div class="tools d-flex">
+              <div class="tool-content d-flex flex-row bd-highlight">
+                <img src="assets/images/htmlLogo.svg" class="img-tools">
+                HTML
+              </div>
+              <div class="tool-content d-flex">
+                <img src="assets/images/css.svg" class="img-tools">
+                CSS
+              </div>
+              <div class="tool-content d-flex">
+                <img src="assets/images/php.svg" class="img-tools">
+                PHP Lannguage
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    var lfollowx = 100,
+      lfollowy = 0,
+      x = 0,
+      y = 0,
+      friction = 1 / 20;
+    function moveImage() {
+      x += (lfollowx - x) * friction;
+      y += (lfollowy - y) * friction;
+
+      translate = 'translate(' + x + 'px,' + y + 'px) scale(1.1)';
+
+      $('.bg').css({
+        '-webkit-transform': translate,
+        '-moz-transform': translate,
+        'transform': translate
+      });
+      window.requestAnimationFrame(moveImage);
+    }
+
+    $(window).on('mousemove click', function (e) {
+      var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+      var lMouseY = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientY));
+
+      lfollowx = (50 * lMouseX) / 100;
+      lfollowy = (50 * lMouseY) / 100;
+    });
+
+    moveImage();
+  </script>
+  <script>
+    var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap-data">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap-data { border-right: 0.08em solid rgba(3,180,222,0) 100%)}";
+        document.body.appendChild(css);
+      };
+  </script>
+  </body>
+</html>
